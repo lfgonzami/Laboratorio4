@@ -10,7 +10,9 @@ namespace Laboratorio04
     {
         public static int Sumar(int a, int b)
         {
-            return 0;
+            int resultado = a + b;
+
+            return resultado;
         }
     }
 }
