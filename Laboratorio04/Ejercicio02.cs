@@ -10,7 +10,21 @@ namespace Laboratorio04
     {
         public double[] Calcular(int[] nums)
         {
-            return new double[] {0.0, 0.0};
+            double suma = 0;
+            double promedio = 0;
+
+            if (nums.Length > 0)
+            {
+                foreach (int num in nums)
+                {
+                    suma += num;
+                }
+
+                promedio = suma / nums.Length;
+            }
+
+            return new double[] { suma, promedio };
+
         }
     }
 }
